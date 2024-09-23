@@ -4,6 +4,17 @@ body {
   overflow-x: hidden;
 }
 
+/* Additional CSS for the logo */
+.logo {
+    font-family: 'Dancing Script', cursive; /* Ensure the cursive font is applied */
+    font-size: 48px; /* Increase font size */
+    margin-left: 5px; /* Adjust left margin to move it slightly to the left */
+  }
+  
+  .logo .bold {
+    font-weight: bold; /* Keep 'Rich' bold */
+  }
+
 /* Navigation Bar */
 .navbar {
   display: flex;
@@ -17,7 +28,7 @@ body {
 }
 
 .navbar a {
-  padding: 14px 20px;
+  padding: 14px 40px;
   text-decoration: none;
   color: black;
   font-weight: bold;
