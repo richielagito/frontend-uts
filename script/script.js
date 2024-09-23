@@ -1,6 +1,6 @@
 let slideIndex = 0;
-const slides = document.querySelector('.slides');
-const dots = document.querySelectorAll('.dot');
+const slides = document.querySelector(".slides");
+const dots = document.querySelectorAll(".dot");
 
 function nextSlide() {
   slideIndex = (slideIndex + 1) % 3;
@@ -18,9 +18,9 @@ function currentSlide(n) {
 }
 
 function updateSlide() {
-  slides.style.transform = `translateX(-${slideIndex * 100 / 3}%)`;
+  slides.style.transform = `translateX(-${(slideIndex * 100) / 3}%)`;
   dots.forEach((dot, index) => {
-    dot.classList.toggle('active', index === slideIndex);
+    dot.classList.toggle("active", index === slideIndex);
   });
 }
 

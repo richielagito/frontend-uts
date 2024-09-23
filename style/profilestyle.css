@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #fafafa;
+}
+.profile-header {
+  text-align: center;
+  padding: 50px 0;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.profile-info h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.profile-info p {
+  color: #666;
+}
+.profile-tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.profile-tabs a {
+  padding: 10px 20px;
+  margin: 0 10px;
+  color: #555;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+.profile-tabs a.active {
+  color: #e60023;
+  border-bottom: 2px solid #e60023;
+}
+.profile-content {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+.profile-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.profile-card img {
+  width: 100%;
+  height: auto;
+}
+.profile-card .card-content {
+  padding: 15px;
+}
+.profile-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.profile-card p {
+  color: #666;
+}
