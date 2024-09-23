@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OOTD Homepage</title>
   <link rel="stylesheet" href="../style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -12,7 +13,6 @@
   <div class="navbar">
     <div class="logo">
       <span class="bold">Rich</span><span>ieChoice</span>              
-      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     </div>
     <a href="#">Home</a>
     <a href="#">Most Popular Outfit</a>
@@ -43,7 +43,7 @@
     <h2>Recently Posted</h2>
   </div>
   <div class="recently-posted">
-    <div class="image-grid">
+    <div class="image-grid" id="recently-posted">
       <img src="https://via.placeholder.com/300x400" alt="Post 1">
       <img src="https://via.placeholder.com/300x400" alt="Post 2">
       <img src="https://via.placeholder.com/300x400" alt="Post 3">
@@ -55,6 +55,21 @@
     </div>
   </div>
 
+  <!-- Floating Upload Button -->
+  <button class="upload-btn" onclick="openUploadModal()">&#43;</button>
+
+  <!-- Upload Modal -->
+  <div id="upload-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeUploadModal()">&times;</span>
+      <h3>Upload Your Outfit</h3>
+      <input type="file" id="image-upload" accept="image/*">
+      <textarea id="comment" placeholder="Comment on your outfit..."></textarea>
+      <button onclick="uploadImage()">Upload</button>
+    </div>
+  </div>
+
   <script src="../script/script.js"></script>
+
 </body>
 </html>

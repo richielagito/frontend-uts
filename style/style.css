@@ -4,18 +4,17 @@ body {
   overflow-x: hidden;
 }
 
-/* Additional CSS for the logo */
 .logo {
-    font-family: 'Dancing Script', cursive; /* Ensure the cursive font is applied */
-    font-size: 48px; /* Increase font size */
-    margin-left: 5px; /* Adjust left margin to move it slightly to the left */
+    font-family: 'Dancing Script', cursive; 
+    font-size: 48px; 
+    margin-left: 5px; 
   }
   
   .logo .bold {
-    font-weight: bold; /* Keep 'Rich' bold */
+    font-weight: bold; 
   }
 
-/* Navigation Bar */
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -40,7 +39,7 @@ body {
   color: gray;
 }
 
-/* Slider */
+
 .slider {
   position: relative;
   width: 100%;
@@ -105,7 +104,7 @@ body {
   background-color: #717171;
 }
 
-/* Scrollable recently posted section */
+
 .recently-posted {
   display: flex;
   justify-content: center;
@@ -125,7 +124,7 @@ body {
   border-radius: 8px;
 }
 
-/* Media queries for responsiveness */
+
 @media (max-width: 768px) {
   .image-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -152,4 +151,77 @@ body {
   .slide {
     height: 200px;
   }
+}
+
+
+.upload-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 36px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.upload-btn:hover {
+  background-color: #ff856c;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  text-align: center;
+}
+
+.modal-content input, .modal-content textarea {
+  width: 80%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #ff856c;
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
