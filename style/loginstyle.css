@@ -9,12 +9,13 @@ body {
   height: 100vh;
   margin: 0;
   background-color: #f0f4f8;
+  background: #fff url(../image/21849012.jpg) no-repeat center right 14rem;
 }
 .login-container {
   background-color: white;
   padding: 1.6rem;
   border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.284);
   width: 100%;
   max-width: 320px;
 }
@@ -31,8 +32,13 @@ form {
 }
 .input-group {
   position: relative;
+  margin-bottom: 0.9rem;
+}
+
+.input-group:nth-child(2) {
   margin-bottom: 1.5rem;
 }
+
 input {
   width: 100%;
   padding: 0.7rem;
@@ -82,8 +88,20 @@ button:hover {
 .forgot-password a {
   color: #7f8c8d;
   text-decoration: none;
-  font-size: 0.7rem;
+  font-size: 0.67rem;
 }
 .forgot-password a:hover {
   color: #3498db;
+}
+
+.create-account {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.create-account a {
+  color: #3498db;
+  text-decoration: underline;
+  cursor: pointer;
 }
