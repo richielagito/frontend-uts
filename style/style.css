@@ -133,6 +133,9 @@ body {
   .slide {
     height: 300px;
   }
+  .navbar {
+   display: none;
+  }
 }
 
 @media (max-width: 480px) {
