@@ -64,3 +64,4 @@ function uploadImage() {
     reader.readAsDataURL(file);
   }
 }
+
