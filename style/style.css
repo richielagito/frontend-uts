@@ -5,15 +5,14 @@ body {
 }
 
 .logo {
-    font-family: 'Dancing Script', cursive; 
-    font-size: 48px; 
-    margin-left: 5px; 
-  }
-  
-  .logo .bold {
-    font-weight: bold; 
-  }
+  font-family: "Dancing Script", cursive;
+  font-size: 48px;
+  margin-left: 5px;
+}
 
+.logo .bold {
+  font-weight: bold;
+}
 
 .navbar {
   display: flex;
@@ -38,7 +37,6 @@ body {
 .navbar a:hover {
   color: gray;
 }
-
 
 .slider {
   position: relative;
@@ -104,7 +102,6 @@ body {
   background-color: #717171;
 }
 
-
 .recently-posted {
   display: flex;
   justify-content: center;
@@ -123,7 +120,6 @@ body {
   width: 100%;
   border-radius: 8px;
 }
-
 
 @media (max-width: 768px) {
   .image-grid {
@@ -153,7 +149,6 @@ body {
   }
 }
 
-
 .upload-btn {
   position: fixed;
   bottom: 20px;
@@ -172,7 +167,6 @@ body {
 .upload-btn:hover {
   background-color: #ff856c;
 }
-
 
 .modal {
   display: none;
@@ -194,7 +188,8 @@ body {
   text-align: center;
 }
 
-.modal-content input, .modal-content textarea {
+.modal-content input,
+.modal-content textarea {
   width: 80%;
   margin: 10px 0;
   padding: 10px;
@@ -212,7 +207,6 @@ body {
   background-color: #ff856c;
 }
 
-
 .close {
   color: #aaa;
   float: right;
@@ -220,7 +214,8 @@ body {
   font-weight: bold;
 }
 
-.close:hover, .close:focus {
+.close:hover,
+.close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
