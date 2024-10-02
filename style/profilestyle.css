@@ -7,6 +7,25 @@
 body {
   background-color: #fafafa;
 }
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #333;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #ddd;
+}
+
 .profile-header {
   text-align: center;
   padding: 50px 0;
@@ -32,17 +51,25 @@ body {
   margin-top: 30px;
 }
 .profile-tabs a {
-  padding: 10px 20px;
-  margin: 0 10px;
+  padding: 12px 24px;
+  margin: 0 15px;
   color: #555;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: 0.3s;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
 }
+
 .profile-tabs a.active {
-  color: #e60023;
-  border-bottom: 2px solid #e60023;
+  color: #ff885b;
+  border-bottom: 3px solid #ff885b;
 }
+
+.profile-tabs a:hover {
+  color: #ff885b;
+  border-bottom: 3px solid #ff885b;
+}
+
 .profile-content {
   max-width: 1200px;
   margin: 40px auto;
