@@ -16,7 +16,7 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   background-color: white;
   padding: 10px;
   box-shadow: 0 4px 2px -2px gray;
@@ -222,4 +222,15 @@ body {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.bx {
+  font-size: 50px;
+}
+
+.richie {
+  width: 80%;
+  margin: 10px 80px;
+  padding: 10px;
+  justify-content: center;
 }
