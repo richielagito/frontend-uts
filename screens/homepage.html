@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Outfitology</title>
     <link rel="stylesheet" href="../style/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Logo & Navigation Bar -->
@@ -19,16 +25,31 @@
         <a href="#">Jelajahi</a>
       </div>
       <div class="profile">
-        <a href="#" target="_blank"><i class="bx bxs-user-circle"></i></a>
+        <a href="../screens/profile.html"><i class="bx bxs-user-circle"></i></a>
       </div>
     </div>
 
     <!-- Slider Section -->
     <div class="slider">
       <div class="slides">
-        <div class="slide" style="background-image: url('https://i.pinimg.com/564x/91/d0/5b/91d05b7d4562c30c4026d3cbeadcb0b3.jpg')"></div>
-        <div class="slide" style="background-image: url('https://i.pinimg.com/736x/49/64/79/496479a5fdb733d1d7f119bd8cf3c41d.jpg')"></div>
-        <div class="slide" style="background-image: url('https://i.pinimg.com/736x/4d/ed/b0/4dedb00921b8c2949f7651974450f93d.jpg')"></div>
+        <div
+          class="slide"
+          style="
+            background-image: url('https://i.pinimg.com/564x/91/d0/5b/91d05b7d4562c30c4026d3cbeadcb0b3.jpg');
+          "
+        ></div>
+        <div
+          class="slide"
+          style="
+            background-image: url('https://i.pinimg.com/736x/49/64/79/496479a5fdb733d1d7f119bd8cf3c41d.jpg');
+          "
+        ></div>
+        <div
+          class="slide"
+          style="
+            background-image: url('https://i.pinimg.com/736x/4d/ed/b0/4dedb00921b8c2949f7651974450f93d.jpg');
+          "
+        ></div>
       </div>
       <div class="arrow left-arrow" onclick="prevSlide()">&#10094;</div>
       <div class="arrow right-arrow" onclick="nextSlide()">&#10095;</div>
@@ -65,7 +86,10 @@
         <span class="close" onclick="closeUploadModal()">&times;</span>
         <h3>Upload Your Outfit</h3>
         <input type="file" id="image-upload" accept="image/*" />
-        <textarea id="comment" placeholder="Comment on your outfit..."></textarea>
+        <textarea
+          id="comment"
+          placeholder="Comment on your outfit..."
+        ></textarea>
         <button onclick="uploadImage()">Upload</button>
       </div>
     </div>
