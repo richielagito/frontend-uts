@@ -1,75 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OOTD Homepage</title>
-  <link rel="stylesheet" href="../style/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <!-- Logo & Navigation Bar -->
-  <div class="navbar">
-    <div class="logo">
-      <span class="bold">Rich</span><span>ieChoice</span>              
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOTD Homepage</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Logo & Navigation Bar -->
+    <div class="navbar">
+      <div class="logo"><span class="bold">Outfitology</span></div>
+      <a href="#">Home</a>
+      <a href="#">Most Popular Outfit</a>
+      <a href="#">Streetwear</a>
+      <a href="#">Formal</a>
+      <a href="#">Other Genres</a>
+      <a href="#">Account</a>
     </div>
-    <a href="#">Home</a>
-    <a href="#">Most Popular Outfit</a>
-    <a href="#">Streetwear</a>
-    <a href="#">Formal</a>
-    <a href="#">Other Genres</a>
-    <a href="#">Account</a>
-  </div>
 
-  <!-- Slider Section -->
-  <div class="slider">
-    <div class="slides">
-      <div class="slide" style="background-image: url('https://i.etsystatic.com/12822214/r/il/6bb2a1/3360147554/il_570xN.3360147554_q926.jpg');"></div>
-      <div class="slide" style="background-image: url('https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1634025439/0180f3e7f8de22dd213e4db729d7be33.jpg');"></div>
-      <div class="slide" style="background-image: url('https://ae01.alicdn.com/kf/S68614b7e8c3e419c8b217eeebf8615461/AOGZ-Hoodie-Fungsional-Taktis-Punk-Sweatshirt-Pria-Techwear-Streetwear-Kasual-Longgar-Bertudung-Serut-Pullover-Atasan-Pakaian.jpg');"></div>
+    <!-- Slider Section -->
+    <div class="slider">
+      <div class="slides">
+        <div class="slide" style="background-image: url('https://i.etsystatic.com/12822214/r/il/6bb2a1/3360147554/il_570xN.3360147554_q926.jpg')"></div>
+        <div class="slide" style="background-image: url('https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1634025439/0180f3e7f8de22dd213e4db729d7be33.jpg')"></div>
+        <div
+          class="slide"
+          style="background-image: url('https://ae01.alicdn.com/kf/S68614b7e8c3e419c8b217eeebf8615461/AOGZ-Hoodie-Fungsional-Taktis-Punk-Sweatshirt-Pria-Techwear-Streetwear-Kasual-Longgar-Bertudung-Serut-Pullover-Atasan-Pakaian.jpg')"
+        ></div>
+      </div>
+      <div class="arrow left-arrow" onclick="prevSlide()">&#10094;</div>
+      <div class="arrow right-arrow" onclick="nextSlide()">&#10095;</div>
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
     </div>
-    <div class="arrow left-arrow" onclick="prevSlide()">&#10094;</div>
-    <div class="arrow right-arrow" onclick="nextSlide()">&#10095;</div>
-    <div class="dots">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
+
+    <!-- Scrollable Section for Recently Posted -->
+    <div class="recently-posted">
+      <h2>Recently Posted</h2>
     </div>
-  </div>
-
-  <!-- Scrollable Section for Recently Posted -->
-  <div class="recently-posted">
-    <h2>Recently Posted</h2>
-  </div>
-  <div class="recently-posted">
-    <div class="image-grid" id="recently-posted">
-      <img src="https://via.placeholder.com/300x400" alt="Post 1">
-      <img src="https://via.placeholder.com/300x400" alt="Post 2">
-      <img src="https://via.placeholder.com/300x400" alt="Post 3">
-      <img src="https://via.placeholder.com/300x400" alt="Post 4">
-      <img src="https://via.placeholder.com/300x400" alt="Post 5">
-      <img src="https://via.placeholder.com/300x400" alt="Post 6">
-      <img src="https://via.placeholder.com/300x400" alt="Post 7">
-      <img src="https://via.placeholder.com/300x400" alt="Post 8">
+    <div class="recently-posted">
+      <div class="image-grid" id="recently-posted">
+        <img src="https://via.placeholder.com/300x400" alt="Post 1" />
+        <img src="https://via.placeholder.com/300x400" alt="Post 2" />
+        <img src="https://via.placeholder.com/300x400" alt="Post 3" />
+        <img src="https://via.placeholder.com/300x400" alt="Post 4" />
+        <img src="https://via.placeholder.com/300x400" alt="Post 5" />
+        <img src="https://via.placeholder.com/300x400" alt="Post 6" />
+        <img src="https://via.placeholder.com/300x400" alt="Post 7" />
+        <img src="https://via.placeholder.com/300x400" alt="Post 8" />
+      </div>
     </div>
-  </div>
 
-  <!-- Floating Upload Button -->
-  <button class="upload-btn" onclick="openUploadModal()">&#43;</button>
+    <!-- Floating Upload Button -->
+    <button class="upload-btn" onclick="openUploadModal()">&#43;</button>
 
-  <!-- Upload Modal -->
-  <div id="upload-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeUploadModal()">&times;</span>
-      <h3>Upload Your Outfit</h3>
-      <input type="file" id="image-upload" accept="image/*">
-      <textarea id="comment" placeholder="Comment on your outfit..."></textarea>
-      <button onclick="uploadImage()">Upload</button>
+    <!-- Upload Modal -->
+    <div id="upload-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeUploadModal()">&times;</span>
+        <h3>Upload Your Outfit</h3>
+        <input type="file" id="image-upload" accept="image/*" />
+        <textarea id="comment" placeholder="Comment on your outfit..."></textarea>
+        <button onclick="uploadImage()">Upload</button>
+      </div>
     </div>
-  </div>
 
-  <script src="../script/script.js"></script>
-
-</body>
+    <script src="../script/script.js"></script>
+  </body>
 </html>
