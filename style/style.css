@@ -14,6 +14,10 @@ body {
   line-height: 1.6;
 }
 
+.bx {
+  font-size: 40px;
+}
+
 /* Navbar styles */
 .navbar {
   display: flex;
@@ -27,10 +31,15 @@ body {
   z-index: 1000;
 }
 
+.orange {
+  color: #ff885b;
+}
+
 .logo {
-  font-family: "Dancing Script", cursive;
-  font-size: 36px;
-  color: #ff6f61;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  width: 40px;
 }
 
 .nav a {
@@ -58,9 +67,9 @@ body {
 /* Slider styles */
 .slider {
   position: relative;
-  width: 100%;
+  width: 90%;
   max-width: 1400px;
-  height: 600px;
+  height: 500px;
   margin: 30px auto;
   overflow: hidden;
   border-radius: 15px;
@@ -87,15 +96,14 @@ body {
   transform: translateY(-50%);
   font-size: 24px;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 15px;
-  border-radius: 50%;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .arrow:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .left-arrow {

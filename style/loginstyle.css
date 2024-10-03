@@ -98,6 +98,15 @@ button {
 button:hover {
   background-color: #e17954;
 }
+.orange {
+  color: #ff885b;
+}
+
+.logo {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
 .forgot-password {
   text-align: left;
   margin: auto;
