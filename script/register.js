@@ -1,7 +1,7 @@
 document.querySelector(".form").addEventListener("submit", function (event) {
   event.preventDefault();
   console.log("Form Submitted!");
-  swal("Yay!", "Your account is registered successfully", "success", {
+  swal("Hooray!", "Your account is registered successfully", "success", {
     closeOnClickOutside: false,
     closeOnEsc: false,
   }).then((value) => {
