@@ -51,6 +51,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 
 .profile-tabs a {
@@ -97,9 +98,9 @@ body {
 }
 
 .create-outfit textarea {
-  height: 100px; /* Adjust height as needed */
-  overflow: auto; /* Enable scrolling */
-  resize: none; /* Disable resizing */
+  height: 100px;
+  overflow: auto;
+  resize: none;
 }
 
 .create-outfit button {
@@ -188,8 +189,10 @@ body {
 
 .popup-inner {
   display: flex;
-  align-items: center;
-  overflow: hidden;
+  align-items: flex-start;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 70vh;
 }
 
 .popup-image {
@@ -200,7 +203,103 @@ body {
 
 .popup-text {
   max-width: calc(100% - 170px);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  overflow: visible;
+  white-space: normal;
+  text-overflow: clip;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .back-button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-info h1 {
+    font-size: 20px;
+  }
+
+  .profile-tabs a {
+    padding: 10px 20px;
+    margin: 0 10px;
+  }
+
+  .create-outfit {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .create-outfit h2 {
+    font-size: 20px;
+  }
+
+  .create-outfit input,
+  .create-outfit textarea {
+    padding: 8px;
+  }
+
+  .create-outfit button {
+    padding: 8px 15px;
+  }
+
+  .outfit-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .popup-image {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .back-button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .profile-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile-info h1 {
+    font-size: 18px;
+  }
+
+  .profile-tabs a {
+    padding: 8px 15px;
+    margin: 0 5px;
+  }
+
+  .create-outfit {
+    padding: 10px;
+  }
+
+  .create-outfit h2 {
+    font-size: 18px;
+  }
+
+  .create-outfit input,
+  .create-outfit textarea {
+    padding: 6px;
+  }
+
+  .create-outfit button {
+    padding: 6px 12px;
+  }
+
+  .outfit-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .popup-image {
+    width: 100px;
+  }
 }

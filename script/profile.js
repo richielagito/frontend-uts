@@ -26,10 +26,9 @@ document.getElementById("outfitForm").addEventListener("submit", function (e) {
 
   const outfitCard = document.createElement("div");
   outfitCard.classList.add("outfit-card");
+
   outfitCard.innerHTML = `
     <img src="${outfitImage}" alt="Outfit Image" class="outfit-img" />
-    <h3>${outfitName}</h3>
-    <p>${outfitDescription}</p>
   `;
 
   outfitCard
@@ -43,12 +42,6 @@ document.getElementById("outfitForm").addEventListener("submit", function (e) {
 });
 
 function showPopup(title, description, image) {
-  const maxLength = 150; // Set batas maksimum karakter
-  const truncatedDescription =
-    description.length > maxLength
-      ? description.slice(0, maxLength) + "..."
-      : description;
-
   const popup = document.createElement("div");
   popup.classList.add("popup");
   popup.innerHTML = `
@@ -58,12 +51,11 @@ function showPopup(title, description, image) {
         <img src="${image}" alt="Popup Image" class="popup-image" />
         <div class="popup-text">
           <h3>${title}</h3>
-          <p>${truncatedDescription}</p>
+          <p>${description}</p>
         </div>
       </div>
     </div>
   `;
-
   document.body.appendChild(popup);
   popup.querySelector(".close-popup").addEventListener("click", function () {
     document.body.removeChild(popup);
