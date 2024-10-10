@@ -134,3 +134,27 @@ input[type="checkbox"] {
   margin: 1px;
   margin-top: 2.5px;
 }
+
+@media (max-width: 768px) {
+  .photo-login {
+    width: 100%;
+  }
+  .create-account-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 70%;
+    max-width: 430px;
+    padding: 1.6rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.284);
+  }
+  .input-group,
+  .register-button,
+  .checkbox {
+    width: 85%;
+    max-width: 400px;
+  }
+}
