@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../style/profilestyle.css" />
   </head>
   <body>
-    <!-- Profile Header Section -->
     <div class="profile-header">
       <a id="backButton" class="back-button">← Back</a>
       <img
@@ -19,57 +18,28 @@
         class="profile-image"
       />
       <div class="profile-info">
-        <h1>Swain Mahisa</h1>
+        <h1>admin</h1>
       </div>
       <div class="profile-tabs">
-        <a href="#" id="createdTab" class="active">Created</a>
-        <a href="#" id="savedTab" class="passive">Saved</a>
+        <a id="createoutfit" class="active" role="button">Create</a>
+        <a id="outfits" class="passive" role="button">Your Outfits</a>
       </div>
     </div>
 
-    <!-- Profile Content Section (Grid Layout) -->
-<div class="profile-content" id="createdContent">
-  <!-- Created Content -->
-  <div class="profile-card">
-    <img src="https://i.pinimg.com/236x/97/ab/4b/97ab4b369bc67e6c7641430e34d6f27d.jpg" alt="Content Image" />
-    <div class="card-content">
-      <h3>Outfit keren</h3>
-      <p>adidas baju</p>
-      <p>adidas celana</p>
-      <p>adidas samba</p>
+    <div class="create-outfit">
+      <h2>Create Outfit</h2>
+      <form id="outfitForm">
+        <input type="text" id="outfitName" placeholder="Outfit Name" />
+        <textarea id="outfitDescription" placeholder="Description"></textarea>
+        <input type="url" id="outfitImage" placeholder="Image URL" required />
+        <button type="submit">Add Outfit</button>
+      </form>
     </div>
-  </div>
 
-  <div class="profile-card">
-    <img src="https://assets-cdn.vam.ac.uk/2022/10/12/13/25/23/54a310e2-84b9-474d-9539-328daac30f71/320.jpg" alt="Content Image" />
-    <div class="card-content">
-      <h3>Korean Traditional Outfit</h3>
-      <p>Hanbok</p>
+    <div class="your-outfits" style="display: none">
+      <div id="createdContent"></div>
     </div>
-  </div>
-</div>
 
-<div class="profile-content" id="savedContent" style="display: none;">
-  <!-- Saved Content -->
-  <div class="profile-card">
-    <img src="" alt="" />
-    <div class="card-content">
-      <h3>judul outfit</h3>
-      <p>deskripsi</p>
-    </div>
-  </div>
-
-  <div class="profile-card">
-    <img src="" alt="" />
-    <div class="card-content">
-      <h3>judul outfit</h3>
-      <p>deskripsi outfit</p>
-    </div>
-  </div>
-</div>
-
-      <!-- Repeat for more cards -->
-      <script src="../script/profile.js"></script>
-    </div>
+    <script src="../script/profile.js"></script>
   </body>
 </html>
