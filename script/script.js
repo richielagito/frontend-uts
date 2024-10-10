@@ -65,3 +65,28 @@ function uploadImage() {
   }
 }
 
+// Get references to the audio element and buttons
+const audio = document.getElementById('background-music');
+const playButton = document.getElementById('playButton');
+const pauseButton = document.getElementById('pauseButton');
+const volumeControl = document.getElementById('volumeControl');
+
+// Function to play audio
+playButton.addEventListener('click', () => {
+    audio.play();
+});
+
+// Function to pause audio
+pauseButton.addEventListener('click', () => {
+    audio.pause();
+});
+
+// Function to adjust volume
+volumeControl.addEventListener('input', () => {
+    audio.volume = volumeControl.value; // Set volume from the slider
+});
+
+// Optionally, you can autoplay the audio when the page loads
+window.addEventListener('load', () => {
+    audio.play(); // Automatically plays the audio when the page loads
+});
