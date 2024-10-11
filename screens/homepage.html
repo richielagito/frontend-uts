@@ -11,7 +11,7 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Logo & Navigation Bar -->
+    <!-- Logo dan Navigation Bar -->
     <div class="navbar">
       <div class="logo">
         <span class="bold"><span class="orange">Outfit</span>ology</span>
@@ -33,7 +33,7 @@
       <a href="profile.html">Profile</a>
     </nav>
 
-    <!-- Slider Section -->
+    <!-- Slider -->
     <div class="slider">
       <div class="slides">
         <div class="slide" style="background-image: url('https://plus.unsplash.com/premium_photo-1708633003273-bed7672ddd81?q=80&w=1821&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
@@ -49,7 +49,7 @@
       </div>
     </div>
 
-    <!-- Scrollable Section for Recently Posted -->
+    <!-- recent post -->
     <div class="recently-posted">
       <h2>Outfit Of The Day</h2>
     </div>
@@ -158,10 +158,11 @@
       </div>
     </div>
 
-    <audio id="background-music" loop>
-      <source src="../image/try.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage" />
+      <div id="caption" class="caption"></div>
+    </div>
 
     <script src="../script/script.js"></script>
   </body>
