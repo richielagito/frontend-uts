@@ -1,4 +1,3 @@
-/* Basic reset and font import */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
 * {
@@ -18,7 +17,6 @@ body {
   font-size: 40px;
 }
 
-/* Navbar styles */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -63,8 +61,6 @@ body {
 .profile a:hover {
   color: #ff6f61;
 }
-
-/* hamburger */
 
 .hamburger {
   position: relative;
@@ -133,7 +129,6 @@ body {
   margin-bottom: 15px;
 }
 
-/* Slider styles */
 .slider {
   position: relative;
   width: 90%;
@@ -207,7 +202,6 @@ body {
   background-color: #fff;
 }
 
-/* Recently Posted section */
 .recently-posted h2 {
   text-align: center;
   font-size: 28px;
@@ -237,24 +231,21 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Container for Cards */
 #container {
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
 }
 
-/* Column Styles */
 .col {
   height: auto;
   display: flex;
   flex-direction: column;
   padding: 10px;
   gap: 10px;
-  width: calc(100% / 5); /* Default for large screens (5 columns) */
+  width: calc(100% / 5);
 }
 
-/* Card Styles */
 .card {
   margin: 0;
   width: 100%;
@@ -267,7 +258,6 @@ body {
   border-radius: 20px;
 }
 
-/* Loader Style */
 #loader {
   border: 4px solid #f3f3f3;
   border-top: 4px solid #3498db;
@@ -289,12 +279,9 @@ body {
   }
 }
 
-/* Media Queries for Responsiveness */
-
-/* For small screens (up to 600px, typically mobile) */
 @media (max-width: 800px) {
   .col {
-    width: calc(100% / 2); /* Full-width for mobile */
+    width: calc(100% / 2); 
   }
   .hamburger {
     display: block;
@@ -313,24 +300,21 @@ body {
   }
 }
 
-/* For tablets (601px to 1024px) */
 @media (min-width: 801px) and (max-width: 1024px) {
   .col {
-    width: calc(100% / 3); /* Two columns for tablets */
+    width: calc(100% / 3); 
   }
 }
 
-/* For medium screens (up to 1200px) */
 @media (min-width: 1025px) and (max-width: 1200px) {
   .col {
-    width: calc(100% / 4); /* Three columns for small desktops */
+    width: calc(100% / 4); 
   }
 }
 
-/* For large screens (over 1200px) */
 @media (min-width: 1201px) {
   .col {
-    width: calc(100% / 5); /* Five columns for large desktops */
+    width: calc(100% / 5); 
   }
 }
 
@@ -380,4 +364,50 @@ body {
     width: 95%;
     padding: 20px;
   }
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0, 0, 0); 
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.caption {
+  margin: auto;
+  display: block;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px; 
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }

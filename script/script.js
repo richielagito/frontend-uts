@@ -70,3 +70,33 @@ menu_btn.addEventListener("click", function () {
   menu_btn.classList.toggle("is-active");
   mobile_menu.classList.toggle("is-active");
 });
+
+
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImage");
+const captionText = document.getElementById("caption");
+
+
+function openModal(imageSrc, description) {
+  modal.style.display = "block";
+  modalImg.src = imageSrc;
+  captionText.innerHTML = description;
+}
+
+function closeModal() {
+  modal.style.display = "none";
+}
+
+const images = document.querySelectorAll("#recently-posted img");
+images.forEach((img) => {
+  img.addEventListener("click", function () {
+    const description = img.alt; 
+    openModal(img.src, description);
+  });
+});
+
+modal.addEventListener("click", function (event) {
+  if (event.target === modal) {
+    closeModal();
+  }
+});
